@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Suspense } from "react";
-import Found_pro from "../not-found";
 
 async function getData(id) {
   const res = await fetch(`https://dummyjson.com/products/${id}`);
 
   if (!res.ok) {
-    return <Found_pro />;
+    console.log("error");
   }
 
   return res.json();
