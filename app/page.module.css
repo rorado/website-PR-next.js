@@ -1,0 +1,36 @@
+.home {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.dexp {
+  max-width: 600px;
+  min-width: 100px;
+  margin: 0 30px;
+}
+.title {
+  margin: 10px 0;
+}
+.text {
+  /* background: linear-gradient(
+    to left,
+    var(--text),
+    var(--Secondary),
+    var(--text)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  letter-spacing: 1.5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+}

@@ -1,0 +1,204 @@
+.imageHome {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.705),
+      rgba(0, 0, 0, 0.733)
+    ),
+    url("/images/image_home/image products home_page.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.context_image_home {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+@media screen and (max-width: 800px) {
+  .context_image_home {
+    width: 95%;
+  }
+}
+
+.context_image_home .title,
+.context_image_home .identification {
+  font-stretch: narrower;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.context_image_home .title {
+  color: #fff;
+}
+
+.context_image_home .identification {
+  font-weight: 400;
+  color: rgb(146, 145, 145);
+}
+@media screen and (max-width: 800px) {
+  .context_image_home {
+    width: 95%;
+  }
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.buttons button {
+  padding: 10px;
+  border: 3px solid var(--Secondary);
+  outline: none;
+  border-radius: 25px;
+  width: 200px;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cover {
+  background: var(--Secondary);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.buttons button:hover .cover {
+  width: 100%;
+}
+
+/*  Popular Products */
+
+.Popular_Products {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Popular_Products .title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Popular_Products .title h1 {
+  font-stretch: narrower;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+.Popular_Products .title h4 {
+  text-align: center;
+  font-stretch: narrower;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(146, 145, 145);
+  letter-spacing: 1px;
+  width: 60%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  .Popular_Products .title h4 {
+    width: 90%;
+  }
+}
+.products_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow: scroll;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  padding: 15px 5px;
+}
+@media screen and (max-width: 850px) {
+  .products_container {
+    width: 95%;
+  }
+}
+.products_container::-webkit-scrollbar {
+  width: 0px;
+}
+.Control_products {
+  margin-top: -30px;
+  display: flex;
+  gap: 3%;
+  justify-content: end;
+  margin-right: 5%;
+}
+.next,
+.prev {
+  color: var(--Secondary);
+  border: solid 2px var(--Secondary);
+  width: 35px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dexp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 200px 10%;
+}
+.dexp image {
+  flex: 50%;
+}
+.dexp div {
+  flex: 50%;
+}
+
+.title {
+  margin: 10px 0;
+}
+
+.text {
+  letter-spacing: 1.5px;
+}
+
+.chow_more {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s;
+  width: 150px;
+  text-decoration: underline;
+}
+
+.chow_more:hover {
+  color: var(--Secondary);
+}

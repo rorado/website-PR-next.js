@@ -1,0 +1,193 @@
+@media screen and (min-width: 700px) {
+  .container_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px 15px;
+    background: var(--bg);
+    box-shadow: 1px 2px 3px rgba(151, 149, 149, 0.158);
+    transition: 0.5s all ease-out;
+  }
+  .services {
+    display: flex;
+  }
+  .menuicon {
+    display: none !important;
+  }
+
+  .logo {
+    background: linear-gradient(
+      to left,
+      var(--text),
+      var(--Secondary),
+      var(--text),
+      var(--Secondary)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-family: var(--font-nutino-bold);
+  }
+  .container_servise {
+    padding: 0 15px;
+  }
+  .service {
+    font-size: 21px;
+    font-family: var(--font-nutino);
+  }
+  .serviceLink {
+    color: var(--text);
+    padding: 4px 8px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .serviceLink:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+  .serviceLink.active {
+    padding: 8px;
+    background: var(--text);
+    color: var(--bg);
+  }
+  .hrnav {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px 15px;
+    background: var(--bg);
+    box-shadow: 0 5px 12px rgba(151, 149, 149, 0.158);
+    transition: 0.5s all ease-out;
+  }
+  .menuicon {
+    transition: 0.2s;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 20px;
+    background-color: var(--text);
+    color: var(--bg);
+  }
+  .menuicon.animitionMenu {
+    animation: rotatMenu 0.5s;
+  }
+  .menuicon.animitionMenu:hover {
+    animation: rotatMenu 0.5s;
+  }
+
+  @keyframes rotatMenu {
+    0% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(30deg);
+    }
+    80% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .services {
+    padding: 20px 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(80px);
+    transform: translateY(-100vh);
+  }
+  .services.show {
+    right: 0;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(50px);
+    transform: translateY(0);
+    animation: animistionChow 1s;
+  }
+  @keyframes animistionChow {
+    0% {
+      transform: translateY(-100vh);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    70% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .service {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo {
+    background: linear-gradient(
+      to left,
+      var(--text),
+      var(--Secondary),
+      var(--text),
+      var(--Secondary)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-family: var(--font-nutino-bold);
+  }
+  .service {
+    padding: 0 15px;
+    font-size: 21px;
+    font-family: var(--font-nutino);
+  }
+  .serviceLink {
+    padding: 4px 8px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+
+  .serviceLink:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+  .serviceLink.active {
+    padding: 8px;
+    background-color: var(--text);
+    color: var(--bg);
+  }
+  .hrnav {
+    margin: 15px 5px;
+  }
+}

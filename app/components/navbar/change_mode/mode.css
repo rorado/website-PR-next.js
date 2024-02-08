@@ -1,0 +1,38 @@
+.dark {
+  position: absolute;
+  width: 43%;
+  border-radius: 50%;
+  background-color: var(--Secondary);
+  height: 80%;
+  animation: chainge_model_nigth 0.5s forwards;
+}
+@keyframes chainge_model_nigth {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(11px);
+  }
+  100% {
+    transform: translateX(23px);
+  }
+}
+.light {
+  position: absolute;
+  width: 43%;
+  border-radius: 50%;
+  background-color: var(--Secondary);
+  height: 80%;
+  animation: chainge_model_morning 0.5s forwards;
+}
+@keyframes chainge_model_morning {
+  0% {
+    transform: translateX(23px);
+  }
+  50% {
+    transform: translateX(11px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

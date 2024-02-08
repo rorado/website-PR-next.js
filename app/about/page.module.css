@@ -1,0 +1,55 @@
+.imageHome {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(14, 13, 13, 0.534),
+      rgba(20, 20, 20, 0.664)
+    ),
+    url("/images/image_home/image products home_page.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.context_image_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  gap: 20px;
+}
+
+.context_image_home .title,
+.context_image_home .identification,
+.text {
+  font-stretch: narrower;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.context_image_home .title {
+  color: #fff;
+}
+
+.context_image_home .identification {
+  font-weight: 600;
+  color: rgb(146, 145, 145);
+}
+@media screen and (max-width: 800px) {
+  .context_image_home {
+    width: 95%;
+  }
+}
+
+.text {
+  font-size: 18px;
+  color: var(--text);
+  line-height: 40px;
+  letter-spacing: 1.6px;
+}

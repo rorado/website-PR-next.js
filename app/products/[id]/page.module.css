@@ -1,0 +1,46 @@
+.container {
+  margin-top: 100px;
+}
+.title {
+  font-family: var(--font-nutino);
+}
+.subAddress {
+  font-family: var(--font-nutino);
+  font-weight: 100;
+  color: #646464;
+}
+.imageContainer {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.writer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--Secondary);
+  user-select: none;
+  font-family: var(--font-nutino);
+  z-index: 2;
+}
+.image {
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: black;
+}
+.miniImages {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  gap: 10px;
+  border: 1px solid var(--Secondary);
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+.miniImage {
+  border-radius: 15px;
+}

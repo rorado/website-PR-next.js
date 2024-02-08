@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid var(--Secondary);
+  border-radius: 15px;
+  padding: 5px 6px;
+  gap: 2px;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+  margin: 0 auto;
+}

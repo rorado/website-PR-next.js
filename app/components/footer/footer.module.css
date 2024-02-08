@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 100px;
+  background-color: var(--Secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 20vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.icon {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease-in;
+}
+.icon:hover {
+  opacity: 2;
+  transform: translateY(-10px);
+}

@@ -1,0 +1,66 @@
+.container {
+  margin-top: 100px;
+}
+.container > div {
+  margin: 5px 0;
+}
+.page_title {
+  text-align: center;
+}
+.page_title h1 {
+  font-family: var(--font-nutino);
+  margin-bottom: 7px;
+}
+.page_title h3 {
+  font-family: var(--font-nutino);
+  font-weight: 100;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px !important;
+  background-color: rgba(102, 98, 98, 0.603);
+  border-radius: 15px;
+}
+.inputs form {
+  width: 90%;
+}
+.inputs form div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.inputs form div label {
+  margin-bottom: 5px;
+  font-family: var(--font-nutino);
+}
+.inputs form div input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  transition: 0.3s;
+}
+.inputs form div textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.submit {
+  border-radius: 5px;
+  padding: 8px;
+  background: var(--Secondary);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.submit:hover {
+  background-color: rgb(111, 4, 211);
+}
